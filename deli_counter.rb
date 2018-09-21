@@ -9,9 +9,9 @@ def line(katz_deli)
     line_array = []
     katz_deli.each do |customer|
       place_in_line = customer.index + 1
-      "#{place_in_line}. #{customer} " << line_array
+      line_array << "#{place_in_line}. #{customer}" 
     end
-    puts "The line is currently: "
+    puts "The line is currently: #{line_array.join(" "}"
   end
 end
 
